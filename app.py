@@ -8,7 +8,7 @@ load_dotenv()  # pulls OPENAI_API_KEY from .env
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ── FastAPI init ───────────────────────────────────────────
-app = FastAPI(title="NeuroNest AI API", version="0.1.0")
+app = FastAPI(title="NeuroGuideAI API", version="0.1.0")
 
 class ChatRequest(BaseModel):
     prompt: str
